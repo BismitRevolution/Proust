@@ -16,10 +16,10 @@
         <!-- Bootstrap -->
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap-v4.0.min.css') }}"> -->
         <!-- Materialize -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/materialize.min.css') }}"> -->
-        <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+        <link rel="stylesheet" href="{{ asset('css/vendor/materialize.min.css') }}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Foundation ZURB -->
-        <link rel="stylesheet" href="{{ asset('css/vendor/foundation.min.css') }}">
+        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/foundation.min.css') }}"> -->
         <!-- Lightbox -->
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/lightbox.css') }}"> -->
         <!-- Font Awesome -->
@@ -34,6 +34,8 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Navbar Style -->
         <link rel="stylesheet" href="{{ asset('css/_header.css') }}">
+        <!-- Sidebar Style -->
+        <link rel="stylesheet" href="{{ asset('css/_sidebar.css') }}">
         <!-- Footer Style -->
         <link rel="stylesheet" href="{{ asset('css/_footer.css') }}">
         <!-- Default Style -->
@@ -48,8 +50,15 @@
     <body>
         <!-- @include('_loading') -->
         @include('layouts._header')
-        <div class="">
-        @yield('content')
+        <div class="container">
+            <div class="row" style="margin-top: 10px; padding-top: 20px;">
+                <div class="col m8 s12">
+                    @yield('content')
+                </div>
+                <div class="col m4 s12">
+                    @include('layouts._sidebar')
+                </div>
+            </div>
         </div>
 
         <!-- JQuery -->
@@ -63,7 +72,7 @@
         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
         <!-- Materialize -->
-        <!-- <script type="application/javascript" src="{{ asset('js/vendor/materialize.min.js') }}"></script> -->
+        <script type="application/javascript" src="{{ asset('js/vendor/materialize.min.js') }}"></script>
 
         <!-- PopperJS -->
         <!-- <script type="application/javascript" src="https://unpkg.com/popper.js"></script> -->
@@ -73,7 +82,7 @@
 
         <!-- Foundation ZURB -->
         <!-- <script type="application/javascript" src="{{ asset('js/vendor/what-input.js') }}"></script> -->
-        <script type="application/javascript" src="{{ asset('js/vendor/foundation.min.js') }}"></script>
+        <!-- <script type="application/javascript" src="{{ asset('js/vendor/foundation.min.js') }}"></script> -->
 
         <!-- Font Awesome -->
         <script type="application/javascript" src="{{ asset('js/vendor/fontawesome-all.js') }}"></script>

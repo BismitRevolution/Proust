@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(document).foundation();
+    // $(document).foundation();
 
     // Parallax Effect
     Parallax = {

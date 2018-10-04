@@ -2,6 +2,10 @@ $(document).ready(function () {
     // $("#home-nav").removeClass("active");
     // $("#dashboard-nav").addClass("active");
 
+    $('.sidenav').sidenav();
+    $('.dropdown-trigger').dropdown();
+    $('.tabs').tabs();
+
     // var isActive = false;
     // var hamburger = document.getElementById('hamburger');
     // hamburger.onclick = function (e) {
