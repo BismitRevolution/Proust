@@ -11,11 +11,11 @@
             <!-- <a href="#">Proust</a> -->
             <a href="#" class="left sidenav-trigger" data-target="sidenav"><i class="fas fa-bars"></i></a>
             <ul class="left hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
+                <li><a href="{{ route('index') }}">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Register</a></li>
-                <li><a href="#" class="dropdown-trigger" data-target="dropdown-search">Search</a></li>
+                <li><a href="{{ route('search') }}">Search</a></li>
                 <li><a href="#">Browse</a></li>
                 <li><a href="#">Announcement</a></li>
             </ul>
@@ -31,11 +31,11 @@
 </div>
 
 <ul id="sidenav" class="sidenav">
-    <li><a href="#">Home</a></li>
+    <li><a href="{{ route('index') }}">Home</a></li>
     <li><a href="#">About</a></li>
     <li><a href="#">Login</a></li>
     <li><a href="#">Register</a></li>
-    <li><a href="#" class="dropdown-trigger" data-target="dropdown-search">Search</a></li>
+    <li><a href="{{ route('search') }}">Search</a></li>
     <li><a href="#">Browse</a></li>
     <li><a href="#">Announcement</a></li>
 </ul>
