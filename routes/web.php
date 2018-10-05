@@ -16,6 +16,7 @@
 // });
 
 Route::get('/', 'PageController@index')->name('index');
+Route::get('/search', 'PageController@search')->name('search');
 
 Auth::routes();
 
