@@ -10,10 +10,10 @@
 <div class="">
     <div class="row">
         <div class="col s12">
-            <div class="card blue lighten-2">
+            <div class="card white">
                 <div class="card-content black-text">
-                    <span class="card-title">Psychological Research on Urban Society</span>
-                    <p style="margin-top:5px; margin-bottom:5px;">
+                    <span class="card-title" style="padding-bottom: 20px;">Psychological Research on Urban Society</span>
+                    <p class="paragraph">
                         Psychological Research on Urban Society (PRoUSt) welcomes excellent
                         empirical and theoretical contributions to applied research related
                         to the psychology of urban issues. Reviews are also welcome, as are
@@ -27,7 +27,7 @@
                         disciplines, this journal is open to contributions of an
                         interdisciplinary nature.
                     </p>
-                    <p style="margin-top:5px; margin-bottom:5px;">
+                    <p class="paragraph">
                         The readership of PRoUSt Journal consists of academics and
                         practitioners; thus it is suggested that all authors consider
                         these diverse audiences into their writing. Authors of theoretical
@@ -36,41 +36,62 @@
                         papers should clearly elaborate the theoretical approach they
                         are using.
                     </p>
-                    <p style="margin-top:5px; margin-bottom:5px;">
+                    <p>
                         The topics that include in this journal are:
                     </p>
-                    <ul class="browser-default" style="margin-top:5px; margin-bottom:5px;">
+                    <ul class="browser-default">
                         <li>Urban mental health and well-being</li>
                         <li>Education and child development in urban society</li>
                         <li>Intergroup relation, acculturation, and identity formation
                             in urban contexts</li>
-                        <li>Urban social issues (ex: poverty, traffic, crime and violence)</li>
-                        <li>Urban culture</li>
-                        <li>Urban issues on employment and organizational behavior</li>
-                        <li>Technology and urban society</li>
-                    </ul>
+                            <li>Urban social issues (ex: poverty, traffic, crime and violence)</li>
+                            <li>Urban culture</li>
+                            <li>Urban issues on employment and organizational behavior</li>
+                            <li>Technology and urban society</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Announce</span>
-                    <p>Valian ganteng tiada lawan.</p>
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Announce</span>
+                        <!-- <p>Valian ganteng tiada lawan.</p> -->
+                    </div>
                 </div>
+
+                <div class="row">
+                    @foreach ($announcements as $announcement)
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="https://via.placeholder.com/200x210">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">{{ $announcement['title'] }}<i class="material-icons right">more_vert</i></span>
+                                    <p><a href="#">See Details</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">{{ $announcement['title'] }}<i class="material-icons right">close</i></span>
+                                    <p class="paragraph">{{ $announcement['content'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+
+                <ul class="pagination center">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
             </div>
-            <ul class="pagination center">
-                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-            </ul>
         </div>
     </div>
-</div>
-        @endsection
+    @endsection
 
-        @section('extra-js')
-        <script type="application/javascript" src="{{ asset('js/index.js') }}"></script>
-        @endsection
+    @section('extra-js')
+    <script type="application/javascript" src="{{ asset('js/index.js') }}"></script>
+    @endsection
