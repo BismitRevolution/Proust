@@ -18,6 +18,9 @@
 Route::get('/', 'PageController@index')->name('index');
 Route::get('/home', 'PageController@index');
 Route::get('/search', 'PageController@search')->name('search');
+Route::get('/announcement', 'PageController@announcement')->name('announcement');
+
+Route::get('/test', 'PageController@test')->name('test');
 
 Auth::routes();
 

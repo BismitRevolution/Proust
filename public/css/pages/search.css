@@ -1,0 +1,9 @@
+.big-label {
+    font-size: 2rem !important;
+    top: -10px !important;
+}
+
+.big-label.active {
+    font-size: 1rem !important;
+    top: 0 !important;
+}

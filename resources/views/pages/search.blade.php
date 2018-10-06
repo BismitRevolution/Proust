@@ -3,7 +3,7 @@
 @section('title', config('app.name'))
 
 @section('extra-css')
-<!-- <link rel="stylesheet" href="{{ asset('css/search.css') }}"> -->
+<link rel="stylesheet" href="{{ asset('css/pages/search.css') }}">
 @endsection
 
 @section('content')
@@ -11,96 +11,102 @@
     <div class="col s12">
         <form class="col s12">
             <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">search</i>
-                    <input id="search-query" type="text" class="validate">
-                    <label for="search-query" style="font-size: 2rem; top: -10px;">Search</label>
+                <div class="card col s12">
+                    <div class="input-field">
+                        <i class="material-icons prefix">search</i>
+                        <input id="search-query" type="text" class="validate" style="margin-bottom: 0px;">
+                        <label class="big-label" for="search-query">Search</label>
+                    </div>
                 </div>
                 <!-- <a class="col s4 input-field waves-effect waves-light btn-large">SEARCH</a> -->
             </div>
 
-            <a class="input-field waves-effect waves-light btn-large">SHOW ADVANCED SEARCH<i class="material-icons right">settings</i></a>
+            <button id="advanced-button" type="button" class="input-field waves-effect waves-light btn-large">SHOW ADVANCED SEARCH<i class="material-icons right">settings</i></button>
 
-            <div class="row">
-                <div class="col s12">
-                    <div class="input-field col s12 m6">
-                        <input id="search-author" type="text" class="validate">
-                        <label for="search-author">Author</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="search-title" type="text" class="validate">
-                        <label for="search-title">Title</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="search-abstract" type="text" class="validate">
-                        <label for="search-abstract">Abstract</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="search-fulltext" type="text" class="validate">
-                        <label for="search-fulltext">Full Text</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="search-supplementary-files" type="text" class="validate">
-                        <label for="search-supplementary-files">Supplementary File(s)</label>
-                    </div>
+            <div id="advanced-search" class="card white" style="padding: 20px;">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field col s12 m6">
+                            <input id="search-author" type="text" class="validate">
+                            <label for="search-author">Author</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="search-title" type="text" class="validate">
+                            <label for="search-title">Title</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="search-abstract" type="text" class="validate">
+                            <label for="search-abstract">Abstract</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="search-fulltext" type="text" class="validate">
+                            <label for="search-fulltext">Full Text</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="search-supplementary-files" type="text" class="validate">
+                            <label for="search-supplementary-files">Supplementary File(s)</label>
+                        </div>
 
-                    <div class="input-field col s6">
-                        <input id="search-date-start" type="date" class="validate">
-                        <label for="search-date-start">From</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="search-date-stop" type="date" class="validate">
-                        <label for="search-date-stop">To</label>
-                    </div>
+                        <div class="input-field col s6">
+                            <input id="search-date-start" type="date" class="validate">
+                            <label for="search-date-start">From</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="search-date-stop" type="date" class="validate">
+                            <label for="search-date-stop">To</label>
+                        </div>
 
-                    <div class="input-field col s12 m6">
-                        <input id="search-discipline" type="text" class="validate">
-                        <label for="search-discipline">Discipline(s)</label>
+                        <div class="input-field col s12 m6">
+                            <input id="search-discipline" type="text" class="validate">
+                            <label for="search-discipline">Discipline(s)</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="search-keyword" type="text" class="validate">
+                            <label for="search-keyword">Keyword(s)</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="search-type" type="text" class="validate">
+                            <label for="search-type">Type (method/approach)</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="search-coverage" type="text" class="validate">
+                            <label for="search-coverage">Coverage</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="search-index" type="text" class="validate">
+                            <label for="search-index">All Index Term Fields</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 m6">
-                        <input id="search-keyword" type="text" class="validate">
-                        <label for="search-keyword">Keyword(s)</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="search-type" type="text" class="validate">
-                        <label for="search-type">Type (method/approach)</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <input id="search-coverage" type="text" class="validate">
-                        <label for="search-coverage">Coverage</label>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="search-index" type="text" class="validate">
-                        <label for="search-index">All Index Term Fields</label>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <a class="input-field waves-effect waves-light btn-large" style="width: 100%;">SEARCH</a>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col s12">
-                    <a class="input-field waves-effect waves-light btn-large" style="width: 100%;">SEARCH</a>
-                </div>
-            </div>
         </form>
     </div>
 
     <div class="col s12">
-        <table class="table-responsive highlight">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Issue</th>
-                    <th>Title</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>-</td>
-                    <td>No Result</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="card white">
+            <div class="card-content black-text">
+                <table class="table-responsive highlight">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Issue</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" style="text-align: center;">No Result</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <div class="col s12" style="padding: 20px 10px;">
@@ -125,5 +131,5 @@
 @endsection
 
 @section('extra-js')
-<!-- <script type="application/javascript" src="{{ asset('js/search.js') }}"></script> -->
+<script type="application/javascript" src="{{ asset('js/pages/search.js') }}"></script>
 @endsection
