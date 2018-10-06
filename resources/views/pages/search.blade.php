@@ -14,12 +14,12 @@
                 <div class="input-field col s12">
                     <i class="material-icons prefix">search</i>
                     <input id="search-query" type="text" class="validate">
-                    <label for="search-query">Search</label>
+                    <label for="search-query" style="font-size: 2rem; top: -10px;">Search</label>
                 </div>
                 <!-- <a class="col s4 input-field waves-effect waves-light btn-large">SEARCH</a> -->
             </div>
 
-            <a class="input-field waves-effect waves-light btn-large">SHOW ADVANCED SEARCH</a>
+            <a class="input-field waves-effect waves-light btn-large">SHOW ADVANCED SEARCH<i class="material-icons right">settings</i></a>
 
             <div class="row">
                 <div class="col s12">

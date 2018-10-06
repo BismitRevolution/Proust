@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="" style="margin: 10px;">
                                     <a class="waves-effect waves-light btn-large" style="width: 100%;">
-                                        <i class="material-icons right">backup</i>LOGIN
+                                        <i class="material-icons right">exit_to_app</i>LOGIN
                                     </a>
                                 </div>
                             </form>
@@ -56,7 +56,9 @@
                     </div>
                 </div>
                 <div id="register">
-                    Register Screen
+                    <a class="waves-effect waves-light btn-large" style="width: 100%;">
+                        <i class="material-icons right">person_add</i>New Account
+                    </a>
                 </div>
             </div>
         </div>
@@ -74,7 +76,7 @@
                 <!-- <p><a href="#">Search</a></p> -->
             </div>
             <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Recent Keywords<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4" style="padding-bottom: 20px;">Recent Keywords<i class="material-icons right">close</i></span>
                 <a href="#">word1 word2 word3 word4 word5 word6 word7 word8 word9</a>
             </div>
         </div>
