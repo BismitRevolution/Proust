@@ -24,4 +24,23 @@ class PageController extends Controller
     public function search() {
         return view('pages.search');
     }
+
+    public function announcement() {
+        $title = "Published Articles: PRoUSt Volume 1 Number 1 April 2018";
+        $content = "We are pleased to announce that Psychological Research on Urban Society (PRoUSt) has published the first volume and number in April 2018.";
+        $announcements = collect([
+            [
+                'title' => $title,
+                'content' => $content,
+            ],
+            [
+                'title' => $title,
+                'content' => $content,
+            ]]);
+        return view('pages.announcement')->with('announcements', $announcements);
+    }
+
+    public function test() {
+        return view('test');
+    }
 }
