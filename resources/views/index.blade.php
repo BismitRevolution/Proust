@@ -53,7 +53,7 @@
                 </div>
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Announce</span>
+                        <span class="card-title">Announcements</span>
                         <!-- <p>Valian ganteng tiada lawan.</p> -->
                     </div>
                 </div>
