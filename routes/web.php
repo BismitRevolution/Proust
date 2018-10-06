@@ -16,11 +16,12 @@
 // });
 
 Route::get('/', 'PageController@index')->name('index');
+Route::get('/home', 'PageController@index');
 Route::get('/search', 'PageController@search')->name('search');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('home');
 
 // This is resource controller, if you want to make a CRUD system, just look at it
 Route::resource('/template', 'TemplateController');
