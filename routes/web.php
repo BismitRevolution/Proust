@@ -26,6 +26,18 @@ Route::resource('/template', 'TemplateController');
 
 Route::resource('/posts', 'PostController');
 
+Route::group(['prefix' => 'about', 'as' => 'about.'], function() {
+    Route::get('/', 'PageController@about')->name('about');
+    Route::get('/contact', 'PageController@contact')->name('contact');
+    Route::get('/editorialTeam', 'PageController@teams')->name('teams');
+    Route::get('/editorialPolicies', 'PageController@policies')->name('policies');
+    Route::get('/submissions', 'PageController@submissions')->name('submissions');
+    Route::get('/journalSponsorship', 'PageController@sponsorship')->name('sponsorship');
+    Route::get('/siteMap', 'PageController@site')->name('site');
+    Route::get('/aboutThisPublishingSystem', 'PageController@system')->name('system');
+    Route::get('/statistics', 'PageController@statistics')->name('statistics');
+});
+
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/', function() {
         return redirect(route('admin.login'));

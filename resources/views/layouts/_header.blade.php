@@ -12,7 +12,7 @@
             <a href="#" class="left sidenav-trigger" data-target="sidenav"><i class="fas fa-bars"></i></a>
             <ul class="left hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="{{ route('about.about') }}">About</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Register</a></li>
                 <li><a href="#" class="dropdown-trigger" data-target="dropdown-search">Search</a></li>
