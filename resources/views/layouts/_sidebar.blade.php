@@ -47,7 +47,7 @@
                                     <label for="sidebar-password">Password</label>
                                 </div>
                                 <div class="" style="margin: 10px;">
-                                    <a class="waves-effect waves-light btn-large" style="width: 100%;">
+                                    <a href="{{ route('login') }}" class="waves-effect waves-light btn-large" style="width: 100%;">
                                         <i class="material-icons right">exit_to_app</i>LOGIN
                                     </a>
                                 </div>
