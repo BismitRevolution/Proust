@@ -3,6 +3,6 @@
     src: url('/fonts/aller/Aller_Std_Rg.ttf');
 }
 
-h2 {
+h2,h5,h4 {
     font-family: "Aller-Regular";
 }

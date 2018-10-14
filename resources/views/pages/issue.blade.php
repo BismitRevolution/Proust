@@ -14,23 +14,28 @@
                 <div class="col s12">
                     <a href="/" class="breadcrumb">Home</a>
                     <a href="browse" class="breadcrumb">Archives</a>
+                    <a href="issue" class="breadcrumb">Issue Title</a>
             </div>
         </nav>
-        <h2 >Archives</h2>
+
+        <h2 >Issue Title</h2>
         <div class="row">
             <div class="col s12 m6">
                 <div class="card-horizontal grey lighten-1">
                     <div class="card-content white-text bold">
-                        <span class="card-title">2018</span>
+                        <span class="card-title">Publish date</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="issues">
-            <a href="issue">Vol 1, No 1 (2018): April 2018</a>
+
+        <h5 class="bold">Table of Contents</h5>
+        <div class="collection">
+            <a href="detail" class="collection-item"><span class="badge">PDF</span>Editorial Note</a>
+            <a href="detail" class="collection-item"><span class="badge">PDF</span>Original Research Paper</a>
+            <a href="detail" class="collection-item"><span class="badge">PDF</span>Review Article</a>
         </div>
-        <p>1 - 1 of 1 items</p>
+                    
     </div>
 </div>
 @endsection
-
