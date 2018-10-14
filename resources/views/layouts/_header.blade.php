@@ -16,7 +16,7 @@
                 <li><a href="{{ route('login') }}">Login</a></li>
                 <li><a href="{{ route('register') }}">Register</a></li>
                 <li><a href="{{ route('search') }}">Search</a></li>
-                <li><a href="#">Browse</a></li>
+                <li><a href="browse">Browse</a></li>
                 <li><a href="{{ route('announcement') }}">Announcement</a></li>
             </ul>
             <form id="navbar-search" class="right" action="#" method="post">
@@ -36,6 +36,6 @@
     <li><a href="{{ route('login') }}">Login</a></li>
     <li><a href="{{ route('register') }}">Register</a></li>
     <li><a href="{{ route('search') }}">Search</a></li>
-    <li><a href="#">Browse</a></li>
+    <li><a href="browse">Browse</a></li>
     <li><a href="{{ route('announcement') }}">Announcement</a></li>
 </ul>
