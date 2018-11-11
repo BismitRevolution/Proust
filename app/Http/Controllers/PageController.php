@@ -47,4 +47,16 @@ class PageController extends Controller
     public function test() {
         return view('test');
     }
+    
+    public function browse() {
+        return view('pages.browse');
+    }
+
+    public function issue() {
+        return view('pages.issue');
+    }
+
+    public function detail() {
+        return view('pages.content_detail');
+    }
 }
