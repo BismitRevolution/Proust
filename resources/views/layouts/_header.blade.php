@@ -12,10 +12,11 @@
             <a href="#" class="left sidenav-trigger" data-target="sidenav"><i class="fas fa-bars"></i></a>
             <ul class="left hide-on-med-and-down">
                 <li><a href="{{ route('index') }}">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="{{ route('about.about') }}">About</a></li>
                 <li><a href="{{ route('login') }}">Login</a></li>
                 <li><a href="{{ route('register') }}">Register</a></li>
                 <li><a href="{{ route('search') }}">Search</a></li>
+                <!-- <li><a href="{{ route('search') }}" class="dropdown-trigger" data-target="dropdown-search">Search</a></li> -->
                 <li><a href="browse">Browse</a></li>
                 <li><a href="{{ route('announcement') }}">Announcement</a></li>
             </ul>
