@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col s12">
-        <a class="waves-effect waves-light btn-large" style="width: 100%; margin-bottom: 10px;">
+        <a href="{{ route('submission') }}" class="waves-effect waves-light btn-large" style="width: 100%; margin-bottom: 10px;">
             <i class="material-icons right">backup</i>SUBMIT MANUSCRIPT
         </a>
     </div>

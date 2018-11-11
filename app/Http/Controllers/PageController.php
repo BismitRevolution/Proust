@@ -40,6 +40,10 @@ class PageController extends Controller
         return view('pages.announcement')->with('announcements', $announcements);
     }
 
+    public function submission(){
+        return view('pages.submission');
+    }
+
     public function test() {
         return view('test');
     }
