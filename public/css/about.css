@@ -1,0 +1,50 @@
+.text-upper {
+    text-transform: uppercase;
+}
+
+.link-anim a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-anim a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-anim a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-anim a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.about-links a:hover {
+    padding-left: 10px;
+}
+
+.drop-cap:first-letter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
